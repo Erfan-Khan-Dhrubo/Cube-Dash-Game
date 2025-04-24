@@ -1,18 +1,28 @@
+using System;
 using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
     public playerMovement movement;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    
-    // Update is called once per frame
-    
+
+    public newScore script;
+ 
+
+    private void Update()
+    {
+        if (transform.position.x > 8 || transform.position.x < -8)
+        {
+            script.playerDead = true;
+            movement.enabled = false;
+        }
+    }
+
     void OnCollisionEnter(Collision collision)
     {
         
         if (collision.collider.CompareTag("obj"))
         {
-            Debug.Log("hello");
+            script.playerDead = true;
             movement.enabled = false;
         }
 
