@@ -4,16 +4,23 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     public playerMovement movement;
+    
+    public GameObject gameOverScreen;
 
     public newScore script;
+    private bool _isdead = false;
  
 
     private void Update()
     {
-        if (transform.position.x > 8 || transform.position.x < -8)
+        if (!_isdead)
         {
-            script.playerDead = true;
-            movement.enabled = false;
+            if (transform.position.x > 8 || transform.position.x < -8)
+            {
+                script.playerDead = true;
+                movement.enabled = false;
+                gameOverScreen.SetActive(true);
+            }
         }
     }
 
@@ -24,6 +31,7 @@ public class PlayerCollision : MonoBehaviour
         {
             script.playerDead = true;
             movement.enabled = false;
+            gameOverScreen.SetActive(true);
         }
 
     }
