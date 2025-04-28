@@ -1,4 +1,4 @@
-# 🧱 Cube Dash - A Unity Game
+# 🧱 Cube Dash
 
 **Cube Dash** is a fast-paced game where a cube moves forward automatically, and the player must dodge randomly placed obstacles to survive as long as possible. Built using **Unity** and **C#**, this project focuses on smooth movement, obstacle avoidance, and score tracking.
 
