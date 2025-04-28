@@ -22,7 +22,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/cube-dash-unity.git
+   git clone https://github.com/Erfan-Khan-Dhrubo/Cube-Dash-Game.git
    ```
 
 
@@ -34,11 +34,7 @@
 - UI handling for score and high score
 - Data persistence using PlayerPrefs
 
-## 📸 Screenshots / Gameplay
+## 📸 Screenshots 
 
-*Insert a screenshot or gameplay video here!*  
-Example:
-```markdown
-![Cube Dash Gameplay](your-screenshot-link)
-```
+<img src="./game visualization/image.jpg">
 
