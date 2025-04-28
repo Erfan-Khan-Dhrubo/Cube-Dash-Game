@@ -6,10 +6,16 @@ public class PlayerCollision : MonoBehaviour
     public playerMovement movement;
     
     public GameObject gameOverScreen;
+    
+    private Animator _fadeOutAnimator;
 
     public newScore script;
     private bool _isdead = false;
- 
+
+    private void Start()
+    {
+        _fadeOutAnimator = gameOverScreen.GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -20,8 +26,15 @@ public class PlayerCollision : MonoBehaviour
                 script.playerDead = true;
                 movement.enabled = false;
                 gameOverScreen.SetActive(true);
+                GameOver();
             }
         }
+    }
+
+    private void GameOver()
+    {
+        _isdead = true;
+        _fadeOutAnimator.Play("fadeOutAnimation");
     }
 
     void OnCollisionEnter(Collision collision)
@@ -32,6 +45,7 @@ public class PlayerCollision : MonoBehaviour
             script.playerDead = true;
             movement.enabled = false;
             gameOverScreen.SetActive(true);
+            GameOver();
         }
 
     }
