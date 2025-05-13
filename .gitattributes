@@ -12,4 +12,5 @@
 *.hlsl linguist-detectable=false
 *.cginc linguist-detectable=false
 
-
+# Force C# to be detected
+*.cs linguist-language=C#
