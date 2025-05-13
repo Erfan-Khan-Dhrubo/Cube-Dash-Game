@@ -1,0 +1,15 @@
+# Unity asset files (not source code)
+*.meta linguist-detectable=false
+*.mat linguist-detectable=false
+*.anim linguist-detectable=false
+*.controller linguist-detectable=false
+*.prefab linguist-detectable=false
+*.unity linguist-detectable=false
+*.physicMaterial linguist-detectable=false
+
+# Shader files
+*.shader linguist-detectable=false
+*.hlsl linguist-detectable=false
+*.cginc linguist-detectable=false
+
+
