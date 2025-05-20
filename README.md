@@ -24,6 +24,8 @@
    ```bash
    git clone https://github.com/Erfan-Khan-Dhrubo/Cube-Dash-Game.git
    ```
+2. Open the project folder in Unity Editor.
+3. Play the scene to experience the game.
 
 
 ## 🧠 What I Practiced
